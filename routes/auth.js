@@ -48,7 +48,7 @@ router.post('/signUp',(req, res) => {
     .catch(err => console.log(err))
 })
 
-router.post('/logIn', (req, res) => {
+router.post('/signIn', (req, res) => {
     const {id, password} = req.body;
     if(!id){
         res.json({error: `Please enter email or username ${id}`})
